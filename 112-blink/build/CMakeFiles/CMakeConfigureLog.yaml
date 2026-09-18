@@ -2943,8 +2943,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-bfrt0n"
-      binary: "C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-bfrt0n"
+      source: "C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-67urtu"
+      binary: "C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-67urtu"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "-mcpu=cortex-m0plus -mthumb -mfloat-abi=soft"
@@ -2956,13 +2956,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-bfrt0n'
+        Change Dir: 'C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-67urtu'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/GnuWin32/bin/make.exe -f Makefile cmTC_c0ca1/fast
-        C:/PROGRA~1/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_c0ca1.dir/build.make CMakeFiles/cmTC_c0ca1.dir/build
-        make.exe[1]: Entering directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-bfrt0n'
-        Building C object CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj
-        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe"   -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft    -v -o CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/GnuWin32/bin/make.exe -f Makefile cmTC_f2593/fast
+        C:/PROGRA~1/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_f2593.dir/build.make CMakeFiles/cmTC_f2593.dir/build
+        make.exe[1]: Entering directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-67urtu'
+        Building C object CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj
+        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe"   -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft    -v -o CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe
         Target: arm-none-eabi
@@ -2970,8 +2970,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.3.1 20260627 (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_c0ca1.dir/'
-         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/cc1.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/ -isysroot C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c0ca1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o C:\\Users\\Pas\\AppData\\Local\\Temp\\ccvTeT65.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_f2593.dir/'
+         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/cc1.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/ -isysroot C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f2593.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o C:\\Users\\Pas\\AppData\\Local\\Temp\\ccguNHIE.s
         GNU C23 (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) version 15.3.1 20260627 (arm-none-eabi)
         	compiled by GNU C version 13-win32, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -2988,14 +2988,14 @@ events:
          C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: f90d3e0112144dd5b94700173c925ae0
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_c0ca1.dir/'
-         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj C:\\Users\\Pas\\AppData\\Local\\Temp\\ccvTeT65.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_f2593.dir/'
+         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj C:\\Users\\Pas\\AppData\\Local\\Temp\\ccguNHIE.s
         GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) 2.45.1.20260126
         COMPILER_PATH=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v6-m/nofp/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_c0ca1.elf
-        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe" -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft  -Wl,--build-id=none -nostdlib  -v "CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj"  -o cmTC_c0ca1.elf
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_f2593.elf
+        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe" -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft  -Wl,--build-id=none -nostdlib  -v "CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj"  -o cmTC_f2593.elf
         Using built-in specs.
         COLLECT_GCC=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe
         COLLECT_LTO_WRAPPER=C:/Program\\ Files/Arm/GNU\\ Toolchain\\ mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/lto-wrapper.exe
@@ -3006,11 +3006,11 @@ events:
         gcc version 15.3.1 20260627 (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) 
         COMPILER_PATH=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v6-m/nofp/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_c0ca1.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_c0ca1.elf.'
-         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/collect2.exe -plugin C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/liblto_plugin.dll -plugin-opt=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Pas\\AppData\\Local\\Temp\\ccisIbbf.res --sysroot=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_c0ca1.elf -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1 -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_f2593.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_f2593.elf.'
+         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/collect2.exe -plugin C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/liblto_plugin.dll -plugin-opt=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Pas\\AppData\\Local\\Temp\\ccifnGSZ.res --sysroot=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_f2593.elf -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1 -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj
         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00008000
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_c0ca1.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_c0ca1.elf.'
-        make.exe[1]: Leaving directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-bfrt0n'
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_f2593.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_f2593.elf.'
+        make.exe[1]: Leaving directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-67urtu'
         
       exitCode: 0
   -
@@ -3043,13 +3043,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-bfrt0n']
+        ignore line: [Change Dir: 'C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-67urtu']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/GnuWin32/bin/make.exe -f Makefile cmTC_c0ca1/fast]
-        ignore line: [C:/PROGRA~1/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_c0ca1.dir/build.make CMakeFiles/cmTC_c0ca1.dir/build]
-        ignore line: [make.exe[1]: Entering directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-bfrt0n']
-        ignore line: [Building C object CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj]
-        ignore line: ["C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe"   -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft    -v -o CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/GnuWin32/bin/make.exe -f Makefile cmTC_f2593/fast]
+        ignore line: [C:/PROGRA~1/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_f2593.dir/build.make CMakeFiles/cmTC_f2593.dir/build]
+        ignore line: [make.exe[1]: Entering directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-67urtu']
+        ignore line: [Building C object CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj]
+        ignore line: ["C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe"   -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft    -v -o CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe]
         ignore line: [Target: arm-none-eabi]
@@ -3057,8 +3057,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.3.1 20260627 (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_c0ca1.dir/']
-        ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/cc1.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/ -isysroot C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c0ca1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o C:\\Users\\Pas\\AppData\\Local\\Temp\\ccvTeT65.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_f2593.dir/']
+        ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/cc1.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/ -isysroot C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f2593.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o C:\\Users\\Pas\\AppData\\Local\\Temp\\ccguNHIE.s]
         ignore line: [GNU C23 (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) version 15.3.1 20260627 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 13-win32  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -3075,8 +3075,8 @@ events:
         ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: f90d3e0112144dd5b94700173c925ae0]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_c0ca1.dir/']
-        ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj C:\\Users\\Pas\\AppData\\Local\\Temp\\ccvTeT65.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_f2593.dir/']
+        ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj C:\\Users\\Pas\\AppData\\Local\\Temp\\ccguNHIE.s]
         ignore line: [GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) 2.45.1.20260126]
         ignore line: [COMPILER_PATH=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/]
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/]
@@ -3088,9 +3088,9 @@ events:
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/]
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_c0ca1.elf]
-        ignore line: ["C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe" -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft  -Wl --build-id=none -nostdlib  -v "CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj"  -o cmTC_c0ca1.elf]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_f2593.elf]
+        ignore line: ["C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe" -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft  -Wl --build-id=none -nostdlib  -v "CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj"  -o cmTC_f2593.elf]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/Program\\ Files/Arm/GNU\\ Toolchain\\ mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/lto-wrapper.exe]
@@ -3109,12 +3109,12 @@ events:
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/]
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_c0ca1.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_c0ca1.elf.']
-        ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/collect2.exe -plugin C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/liblto_plugin.dll -plugin-opt=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Pas\\AppData\\Local\\Temp\\ccisIbbf.res --sysroot=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_c0ca1.elf -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1 -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_c0ca1.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_f2593.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_f2593.elf.']
+        ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/collect2.exe -plugin C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/liblto_plugin.dll -plugin-opt=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Pas\\AppData\\Local\\Temp\\ccifnGSZ.res --sysroot=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_f2593.elf -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1 -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_f2593.dir/CMakeCCompilerABI.c.obj]
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00008000]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_c0ca1.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_c0ca1.elf.']
-        ignore line: [make.exe[1]: Leaving directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-bfrt0n']
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_f2593.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_f2593.elf.']
+        ignore line: [make.exe[1]: Leaving directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-67urtu']
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -3132,8 +3132,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-tqca0b"
-      binary: "C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-tqca0b"
+      source: "C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-q0gzpv"
+      binary: "C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-q0gzpv"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-mcpu=cortex-m0plus -mthumb -mfloat-abi=soft"
       CMAKE_CXX_FLAGS_DEBUG: "-Og -g"
@@ -3146,13 +3146,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-tqca0b'
+        Change Dir: 'C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-q0gzpv'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/GnuWin32/bin/make.exe -f Makefile cmTC_1ccca/fast
-        C:/PROGRA~1/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_1ccca.dir/build.make CMakeFiles/cmTC_1ccca.dir/build
-        make.exe[1]: Entering directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-tqca0b'
-        Building CXX object CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj
-        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-g++.exe"   -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft    -v -o CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/GnuWin32/bin/make.exe -f Makefile cmTC_4d2c7/fast
+        C:/PROGRA~1/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_4d2c7.dir/build.make CMakeFiles/cmTC_4d2c7.dir/build
+        make.exe[1]: Entering directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-q0gzpv'
+        Building CXX object CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj
+        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-g++.exe"   -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft    -v -o CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-g++.exe
         Target: arm-none-eabi
@@ -3160,8 +3160,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.3.1 20260627 (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_1ccca.dir/'
-         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/cc1plus.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/ -isysroot C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1ccca.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o C:\\Users\\Pas\\AppData\\Local\\Temp\\cc4g0DZ4.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_4d2c7.dir/'
+         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/cc1plus.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/ -isysroot C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4d2c7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o C:\\Users\\Pas\\AppData\\Local\\Temp\\ccXfquQF.s
         GNU C++17 (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) version 15.3.1 20260627 (arm-none-eabi)
         	compiled by GNU C version 13-win32, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -3184,14 +3184,14 @@ events:
          C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: a5612ced7e034a58501bf9d692a3b4ba
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_1ccca.dir/'
-         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\Pas\\AppData\\Local\\Temp\\cc4g0DZ4.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_4d2c7.dir/'
+         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\Pas\\AppData\\Local\\Temp\\ccXfquQF.s
         GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) 2.45.1.20260126
         COMPILER_PATH=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v6-m/nofp/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_1ccca.elf
-        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-g++.exe" -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft  -Wl,--build-id=none -nostdlib  -v "CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj"  -o cmTC_1ccca.elf
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_4d2c7.elf
+        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-g++.exe" -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft  -Wl,--build-id=none -nostdlib  -v "CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj"  -o cmTC_4d2c7.elf
         Using built-in specs.
         COLLECT_GCC=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-g++.exe
         COLLECT_LTO_WRAPPER=C:/Program\\ Files/Arm/GNU\\ Toolchain\\ mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/lto-wrapper.exe
@@ -3202,11 +3202,11 @@ events:
         gcc version 15.3.1 20260627 (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) 
         COMPILER_PATH=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v6-m/nofp/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/;C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_1ccca.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_1ccca.elf.'
-         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/collect2.exe -plugin C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/liblto_plugin.dll -plugin-opt=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Pas\\AppData\\Local\\Temp\\ccfOs48i.res --sysroot=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_1ccca.elf -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1 -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_4d2c7.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_4d2c7.elf.'
+         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/collect2.exe -plugin C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/liblto_plugin.dll -plugin-opt=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Pas\\AppData\\Local\\Temp\\cc9vIXzZ.res --sysroot=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_4d2c7.elf -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1 -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj
         C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00008000
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_1ccca.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_1ccca.elf.'
-        make.exe[1]: Leaving directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-tqca0b'
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_4d2c7.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_4d2c7.elf.'
+        make.exe[1]: Leaving directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-q0gzpv'
         
       exitCode: 0
   -
@@ -3245,13 +3245,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-tqca0b']
+        ignore line: [Change Dir: 'C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-q0gzpv']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/GnuWin32/bin/make.exe -f Makefile cmTC_1ccca/fast]
-        ignore line: [C:/PROGRA~1/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_1ccca.dir/build.make CMakeFiles/cmTC_1ccca.dir/build]
-        ignore line: [make.exe[1]: Entering directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-tqca0b']
-        ignore line: [Building CXX object CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: ["C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-g++.exe"   -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft    -v -o CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/GnuWin32/bin/make.exe -f Makefile cmTC_4d2c7/fast]
+        ignore line: [C:/PROGRA~1/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_4d2c7.dir/build.make CMakeFiles/cmTC_4d2c7.dir/build]
+        ignore line: [make.exe[1]: Entering directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-q0gzpv']
+        ignore line: [Building CXX object CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: ["C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-g++.exe"   -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft    -v -o CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-g++.exe]
         ignore line: [Target: arm-none-eabi]
@@ -3259,8 +3259,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.3.1 20260627 (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_1ccca.dir/']
-        ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/cc1plus.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/ -isysroot C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1ccca.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o C:\\Users\\Pas\\AppData\\Local\\Temp\\cc4g0DZ4.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_4d2c7.dir/']
+        ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/cc1plus.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/ -isysroot C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4d2c7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o C:\\Users\\Pas\\AppData\\Local\\Temp\\ccXfquQF.s]
         ignore line: [GNU C++17 (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) version 15.3.1 20260627 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 13-win32  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -3283,8 +3283,8 @@ events:
         ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: a5612ced7e034a58501bf9d692a3b4ba]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_1ccca.dir/']
-        ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\Pas\\AppData\\Local\\Temp\\cc4g0DZ4.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_4d2c7.dir/']
+        ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\Pas\\AppData\\Local\\Temp\\ccXfquQF.s]
         ignore line: [GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) 2.45.1.20260126]
         ignore line: [COMPILER_PATH=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/]
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/]
@@ -3296,9 +3296,9 @@ events:
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/]
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_1ccca.elf]
-        ignore line: ["C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-g++.exe" -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft  -Wl --build-id=none -nostdlib  -v "CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj"  -o cmTC_1ccca.elf]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-v' '-o' 'CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_4d2c7.elf]
+        ignore line: ["C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-g++.exe" -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft  -Wl --build-id=none -nostdlib  -v "CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj"  -o cmTC_4d2c7.elf]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-g++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/Program\\ Files/Arm/GNU\\ Toolchain\\ mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/lto-wrapper.exe]
@@ -3317,12 +3317,12 @@ events:
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/]
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_1ccca.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_1ccca.elf.']
-        ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/collect2.exe -plugin C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/liblto_plugin.dll -plugin-opt=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Pas\\AppData\\Local\\Temp\\ccfOs48i.res --sysroot=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_1ccca.elf -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1 -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_1ccca.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_4d2c7.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_4d2c7.elf.']
+        ignore line: [ C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/collect2.exe -plugin C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/liblto_plugin.dll -plugin-opt=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Pas\\AppData\\Local\\Temp\\cc9vIXzZ.res --sysroot=C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_4d2c7.elf -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1 -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib -LC:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_4d2c7.dir/CMakeCXXCompilerABI.cpp.obj]
         ignore line: [C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00008000]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_1ccca.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_1ccca.elf.']
-        ignore line: [make.exe[1]: Leaving directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-tqca0b']
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-mfloat-abi=soft' '-nostdlib' '-v' '-o' 'cmTC_4d2c7.elf' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_4d2c7.elf.']
+        ignore line: [make.exe[1]: Leaving directory `C:/Repositories/pico/112-blink/build/CMakeFiles/CMakeScratch/TryCompile-q0gzpv']
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -6702,16 +6702,16 @@ events:
       stdout: |
         Change Dir: 'C:/Repositories/pico/112-blink/build/pico-sdk/src/rp2_common/pico_thread_local/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/GnuWin32/bin/make.exe -f Makefile cmTC_8c540/fast
-        C:/PROGRA~1/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_8c540.dir/build.make CMakeFiles/cmTC_8c540.dir/build
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/GnuWin32/bin/make.exe -f Makefile cmTC_153b5/fast
+        C:/PROGRA~1/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_153b5.dir/build.make CMakeFiles/cmTC_153b5.dir/build
         make.exe[1]: Entering directory `C:/Repositories/pico/112-blink/build/pico-sdk/src/rp2_common/pico_thread_local/CMakeFiles/CMakeTmp'
-        Building C object CMakeFiles/cmTC_8c540.dir/tls_check.c.obj
-        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe"   -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft  -std=gnu11 -o CMakeFiles/cmTC_8c540.dir/tls_check.c.obj -c C:/Repositories/pico/112-blink/build/pico-sdk/src/rp2_common/pico_thread_local/tls_check.c
-        Linking C static library libcmTC_8c540.a
-        "C:/Program Files/CMake/bin/cmake.exe" -P CMakeFiles/cmTC_8c540.dir/cmake_clean_target.cmake
-        "C:/Program Files/CMake/bin/cmake.exe" -E cmake_link_script CMakeFiles/cmTC_8c540.dir/link.txt --verbose=1
-        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-ar.exe" qc libcmTC_8c540.a CMakeFiles/cmTC_8c540.dir/tls_check.c.obj
-        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-ranlib.exe" libcmTC_8c540.a
+        Building C object CMakeFiles/cmTC_153b5.dir/tls_check.c.obj
+        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe"   -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft  -std=gnu11 -o CMakeFiles/cmTC_153b5.dir/tls_check.c.obj -c C:/Repositories/pico/112-blink/build/pico-sdk/src/rp2_common/pico_thread_local/tls_check.c
+        Linking C static library libcmTC_153b5.a
+        "C:/Program Files/CMake/bin/cmake.exe" -P CMakeFiles/cmTC_153b5.dir/cmake_clean_target.cmake
+        "C:/Program Files/CMake/bin/cmake.exe" -E cmake_link_script CMakeFiles/cmTC_153b5.dir/link.txt --verbose=1
+        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-ar.exe" qc libcmTC_153b5.a CMakeFiles/cmTC_153b5.dir/tls_check.c.obj
+        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-ranlib.exe" libcmTC_153b5.a
         make.exe[1]: Leaving directory `C:/Repositories/pico/112-blink/build/pico-sdk/src/rp2_common/pico_thread_local/CMakeFiles/CMakeTmp'
         
       exitCode: 0
@@ -7167,16 +7167,16 @@ events:
       stdout: |
         Change Dir: 'C:/Repositories/pico/112-blink/build/pico-sdk/src/rp2_common/pico_clib_interface/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/GnuWin32/bin/make.exe -f Makefile cmTC_43ae7/fast
-        C:/PROGRA~1/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_43ae7.dir/build.make CMakeFiles/cmTC_43ae7.dir/build
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/GnuWin32/bin/make.exe -f Makefile cmTC_625da/fast
+        C:/PROGRA~1/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_625da.dir/build.make CMakeFiles/cmTC_625da.dir/build
         make.exe[1]: Entering directory `C:/Repositories/pico/112-blink/build/pico-sdk/src/rp2_common/pico_clib_interface/CMakeFiles/CMakeTmp'
-        Building C object CMakeFiles/cmTC_43ae7.dir/clib_check.c.obj
-        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe" -Dnewlib=1  -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft  -std=gnu11 -o CMakeFiles/cmTC_43ae7.dir/clib_check.c.obj -c C:/Repositories/pico/112-blink/build/pico-sdk/src/rp2_common/pico_clib_interface/clib_check.c
-        Linking C static library libcmTC_43ae7.a
-        "C:/Program Files/CMake/bin/cmake.exe" -P CMakeFiles/cmTC_43ae7.dir/cmake_clean_target.cmake
-        "C:/Program Files/CMake/bin/cmake.exe" -E cmake_link_script CMakeFiles/cmTC_43ae7.dir/link.txt --verbose=1
-        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-ar.exe" qc libcmTC_43ae7.a CMakeFiles/cmTC_43ae7.dir/clib_check.c.obj
-        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-ranlib.exe" libcmTC_43ae7.a
+        Building C object CMakeFiles/cmTC_625da.dir/clib_check.c.obj
+        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc.exe" -Dnewlib=1  -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft  -std=gnu11 -o CMakeFiles/cmTC_625da.dir/clib_check.c.obj -c C:/Repositories/pico/112-blink/build/pico-sdk/src/rp2_common/pico_clib_interface/clib_check.c
+        Linking C static library libcmTC_625da.a
+        "C:/Program Files/CMake/bin/cmake.exe" -P CMakeFiles/cmTC_625da.dir/cmake_clean_target.cmake
+        "C:/Program Files/CMake/bin/cmake.exe" -E cmake_link_script CMakeFiles/cmTC_625da.dir/link.txt --verbose=1
+        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-ar.exe" qc libcmTC_625da.a CMakeFiles/cmTC_625da.dir/clib_check.c.obj
+        "C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-ranlib.exe" libcmTC_625da.a
         make.exe[1]: Leaving directory `C:/Repositories/pico/112-blink/build/pico-sdk/src/rp2_common/pico_clib_interface/CMakeFiles/CMakeTmp'
         
       exitCode: 0
