@@ -4,6 +4,7 @@
 int main()
 {
     stdio_init_all();
+    stdio_usb_init();
 
     while (1)
     {
