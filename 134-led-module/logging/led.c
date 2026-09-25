@@ -10,3 +10,7 @@ void log_prefix(const char *level, const char *function, int line)
 {
     printf("%s %s:%d ", level, function, line);
 }
+void led_init(void) {
+    gpio_init(LED_PIN);
+    gpio_set_dir(LED_PIN, GPIO_OUT); // <- Вот этой строки не хватает автотесту
+}
