@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "led.h"
+#include "log.h"
 
 const uint BUTTON_PIN = 15;
 
@@ -13,12 +14,14 @@ bool get_button_debounce(uint pin) {
 void handle_command(int command) {
     if (command == 'e') {
         led_set(true);
-        printf("led %s\n", led_is_on() ? "on" : "off");
+        LOG_INF("led %s\n", led_is_on() ? "on" : "off");
     } else if (command == 'd') {
         led_set(false);
-        printf("led %s\n", led_is_on() ? "on" : "off");
+        LOG_INF("led %s\n", led_is_on() ? "on" : "off");
+    } else if (command == 'v') {
+        log_version();
     } else {
-        printf("unknown command: %c\n", command);
+        LOG_ERR("unknown command: %c\n", command);
     }
 }
 
@@ -38,7 +41,7 @@ int main() {
 
         if (previous_button == 1 && current_button == 0) {
             led_toggle();
-            printf("led %s\n", led_is_on() ? "on" : "off");
+            LOG_INF("led %s\n", led_is_on() ? "on" : "off");
         }
         previous_button = current_button;
 
@@ -48,6 +51,7 @@ int main() {
             continue;
         }
 
+        LOG_DBG("got %c\n", command);
         handle_command(command);
     }
 
