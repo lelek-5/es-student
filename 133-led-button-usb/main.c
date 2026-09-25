@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include "pico/stdlib.h"
 
@@ -12,12 +13,14 @@ bool get_button_debounce(uint pin)
 
     bool raw = !gpio_get(pin);
 
-    if (raw != last) {
+    if (raw != last)
+    {
         last_time = get_absolute_time();
         last = raw;
     }
 
-    if (absolute_time_diff_us(last_time, get_absolute_time()) > 5000) {
+    if (absolute_time_diff_us(last_time, get_absolute_time()) > 5000)
+    {
         stable = raw;
     }
 
@@ -27,25 +30,7 @@ bool get_button_debounce(uint pin)
 void set_led(bool on)
 {
     gpio_put(LED_PIN, on);
-    printf("LED %s\n", on ? "on" : "off");
-}
-
-bool handle_command(int command, bool led)
-{
-    if (command == 'e') {
-        if (!led) {
-            set_led(true);
-        }
-        return true;
-    } else if (command == 'd') {
-        if (led) {
-            set_led(false);
-        }
-        return false;
-    } else {
-        printf("unknown command: %c\n", command);
-        return led;
-    }
+    printf("led %s\n", on ? "on" : "off");
 }
 
 int main()
@@ -62,21 +47,17 @@ int main()
     bool led = false;
     bool last_button = false;
 
-    while (1) {
+    while (1)
+    {
         bool button = get_button_debounce(BUTTON_PIN);
 
-        // Нажатие кнопки: меняем состояние и логируем
-        if (button && !last_button) {
+        if (button && !last_button)
+        {
             led = !led;
             set_led(led);
         }
         last_button = button;
 
-        int command = getchar_timeout_us(0);
-        if (command == PICO_ERROR_TIMEOUT) {
-            continue;
-        }
-
-        led = handle_command(command, led);
+        sleep_ms(10);
     }
 }
