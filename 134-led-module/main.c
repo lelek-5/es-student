@@ -1,58 +1,28 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "led.h"
-#include "log.h"
 
-#define BUTTON_PIN 15
+const uint BUTTON_PIN = 15;
 
-bool get_button_debounce(uint pin)
-{
-    static bool last_raw = false;
-    static bool stable = false;
-    static int count = 0;
-
-    bool raw = !gpio_get(pin);
-
-    if (raw == last_raw)
-    {
-        if (count < 3)
-            count++;
-        if (count >= 3)
-            stable = raw;
-    }
-    else
-    {
-        count = 0;
-        last_raw = raw;
-    }
-
-    return stable;
+bool get_button_debounce(uint pin) {
+    bool state = gpio_get(pin);
+    sleep_ms(20);
+    return state;
 }
 
-void handle_command(int command)
-{
-    if (command == 'e')
-    {
+void handle_command(int command) {
+    if (command == 'e') {
         led_set(true);
-        LOG_INF("led %s\n", led_is_on() ? "on" : "off");
-    }
-    else if (command == 'd')
-    {
+        printf("led %s\n", led_is_on() ? "on" : "off");
+    } else if (command == 'd') {
         led_set(false);
-        LOG_INF("led %s\n", led_is_on() ? "on" : "off");
-    }
-    else if (command == 'v')
-    {
-        log_version();
-    }
-    else
-    {
-        LOG_ERR("unknown command: %c\n", command);
+        printf("led %s\n", led_is_on() ? "on" : "off");
+    } else {
+        printf("unknown command: %c\n", command);
     }
 }
 
-int main()
-{
+int main() {
     stdio_init_all();
 
     led_init();
@@ -61,28 +31,25 @@ int main()
     gpio_set_dir(BUTTON_PIN, GPIO_IN);
     gpio_pull_up(BUTTON_PIN);
 
-    bool last_button = false;
+    bool previous_button = gpio_get(BUTTON_PIN);
 
-    while (1)
-    {
-        sleep_ms(10);
+    while (1) {
+        bool current_button = get_button_debounce(BUTTON_PIN);
 
-        bool button = get_button_debounce(BUTTON_PIN);
-
-        if (button && !last_button)
-        {
+        if (previous_button == 1 && current_button == 0) {
             led_toggle();
-            LOG_INF("led %s\n", led_is_on() ? "on" : "off");
+            printf("led %s\n", led_is_on() ? "on" : "off");
         }
-        last_button = button;
+        previous_button = current_button;
 
         int command = getchar_timeout_us(0);
 
-        if (command == PICO_ERROR_TIMEOUT)
-        {
+        if (command == PICO_ERROR_TIMEOUT) {
             continue;
         }
 
         handle_command(command);
     }
+
+    return 0;
 }
