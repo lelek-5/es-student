@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include "pico/stdlib.h"
 
@@ -7,21 +6,23 @@
 
 bool get_button_debounce(uint pin)
 {
+    static bool last_raw = false;
     static bool stable = false;
-    static bool last = false;
-    static absolute_time_t last_time = 0;
+    static int count = 0;
 
-    bool raw = !gpio_get(pin);
+    bool raw = !gpio_get(pin);  // кнопка с подтяжкой: нажато = 0
 
-    if (raw != last)
+    if (raw == last_raw)
     {
-        last_time = get_absolute_time();
-        last = raw;
+        if (count < 3)
+            count++;
+        if (count >= 3)
+            stable = raw;
     }
-
-    if (absolute_time_diff_us(last_time, get_absolute_time()) > 5000)
+    else
     {
-        stable = raw;
+        count = 0;
+        last_raw = raw;
     }
 
     return stable;
