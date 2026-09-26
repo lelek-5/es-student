@@ -1,0 +1,32 @@
+задание: 2.1.2
+проект: 211-command-usb
+устройство: 2e8a:000a
+серийный номер: 500315192871A70C
+порт: COM5
+начало: 2026-09-26T10:31:03
+   0.000 --> enable
+   0.137 <-- enable
+   0.139 <-- dbg read_line:48 got enable
+   0.140 <-- inf handle_command:23 led on
+   2.159 --> disable
+   2.318 <-- disable
+   2.318 <-- dbg read_line:48 got disable
+   2.319 <-- inf handle_command:26 led off
+   4.335 --> info
+   4.418 <-- info
+   4.419 <-- dbg read_line:48 got info
+   4.420 <-- project: 211-command-usb
+   4.421 <-- repo: https://github.com/lelek-5/es-student
+   4.421 <-- board: pico
+   4.422 <-- serial: 500315192871A70C
+   4.423 <-- chip: manufacturer 0x927, part 0x0002, revision 2
+   4.423 <-- pico-sdk: 2.3.0
+   6.457 --> ping
+   6.539 <-- ping
+   6.541 <-- dbg read_line:48 got ping
+   6.542 <-- err handle_command:32 unknown command: ping
+   8.566 --> nosuchcommand
+   8.840 <-- nosuchcommand
+   8.841 <-- dbg read_line:48 got nosuchcommand
+   8.843 <-- err handle_command:32 unknown command: nosuchcommand
+итог: отправлено команд 5, принято строк 20
