@@ -3,12 +3,12 @@
 устройство: 2e8a:000a
 серийный номер: 500315192871A70C
 порт: COM5
-начало: 2026-09-26T00:15:42
-   0.000 --> i
-   0.016 <-- dbg main:57 got i
-   0.018 <-- project: 134-led-module
-   0.019 <-- repo: https://github.com/lelek-5/es-student
-   0.020 <-- board: pico
-   0.020 <-- serial: 500315192871A70C
-   0.022 <-- chip: manufacturer 0x927, part 0x0002, revision 2
+начало: 2026-09-26T10:04:42
+   0.001 --> i
+   0.021 <-- dbg main:57 got i
+   0.023 <-- project: 134-led-module
+   0.025 <-- repo: https://github.com/lelek-5/es-student
+   0.026 <-- board: pico
+   0.027 <-- serial: 500315192871A70C
+   0.029 <-- chip: manufacturer 0x927, part 0x0002, revision 2
 итог: принято строк 6
