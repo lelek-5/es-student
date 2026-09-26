@@ -91,7 +91,6 @@ void read_line(void) {
         line[line_length] = '\0';
 
         if (line_length > 0) {
-            LOG_DBG("got %s\n", line);
             handle_command(line);
         }
 
