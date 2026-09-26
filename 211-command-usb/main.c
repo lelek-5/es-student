@@ -27,6 +27,10 @@ void cmd_info(void) {
     device_info();
 }
 
+void cmd_boot_info(void) {
+    boot_info();
+}
+
 void cmd_version(void) {
     log_version();
 }
@@ -56,6 +60,7 @@ const struct command_t commands[] = {
     { "mem_info", cmd_mem_info },
     { "fw_info", cmd_fw_info },
     { "dev_info", cmd_dev_info },
+    { "boot_info", cmd_boot_info },
 };
 
 const uint command_count = sizeof(commands) / sizeof(commands[0]);
