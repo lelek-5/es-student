@@ -3,13 +3,13 @@
 устройство: 2e8a:000a
 серийный номер: 500315192871A70C
 порт: COM5
-начало: 2026-09-26T12:39:29
+начало: 2026-09-26T12:55:43
    0.000 --> dev_info
-   0.165 <-- dev_info
-   0.166 <-- dbg read_line:94 got dev_info
-   0.167 <-- struct info_t at 0x20000f40, size 24
-   0.168 <-- serial   0x20000f40, size 4, offset  0, value 123456
-   0.170 <-- version  0x20000f44, size 1, offset  4, value 1
-   0.171 <-- name     0x20000f45, size 16, offset  5, value device
-   0.172 <-- fields 21, sizeof 24, padding 3
+   0.173 <-- dev_info
+   0.175 <-- dbg read_line:94 got dev_info
+   0.176 <-- struct info_t: address 0x20000f40, size 24
+   0.178 <-- serial:  address 0x20000f40, size 4, offset 0, value 123456
+   0.180 <-- version: address 0x20000f44, size 1, offset 4, value 1
+   0.181 <-- name:    address 0x20000f45, size 16, offset 5, value device
+   0.183 <-- fields 21, sizeof 24, padding 3
 итог: отправлено команд 1, принято строк 7

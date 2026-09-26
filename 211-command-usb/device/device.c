@@ -44,12 +44,12 @@ void dev_info(void) {
     size_t total_struct = sizeof(device_card);
     size_t padding = total_struct - total_fields;
 
-    printf("struct info_t at 0x%08x, size %u\n", (unsigned)(uintptr_t)&device_card, (unsigned)total_struct);
-    printf("  serial   0x%08x, size %u, offset %2u, value %u\n",
+    printf("struct info_t: address 0x%08x, size %u\n", (unsigned)(uintptr_t)&device_card, (unsigned)total_struct);
+    printf("  serial:  address 0x%08x, size %u, offset %u, value %u\n",
            (unsigned)(uintptr_t)&device_card.serial, (unsigned)size_serial, (unsigned)off_serial, (unsigned)device_card.serial);
-    printf("  version  0x%08x, size %u, offset %2u, value %u\n",
+    printf("  version: address 0x%08x, size %u, offset %u, value %u\n",
            (unsigned)(uintptr_t)&device_card.version, (unsigned)size_version, (unsigned)off_version, (unsigned)device_card.version);
-    printf("  name     0x%08x, size %u, offset %2u, value %s\n",
+    printf("  name:    address 0x%08x, size %u, offset %u, value %s\n",
            (unsigned)(uintptr_t)&device_card.name, (unsigned)size_name, (unsigned)off_name, device_card.name);
 
     printf("fields %u, sizeof %u, padding %u\n", (unsigned)total_fields, (unsigned)total_struct, (unsigned)padding);
