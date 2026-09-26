@@ -32,6 +32,10 @@ target_link_libraries(${PROJECT_NAME}
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE
     DEVICE_BOARD="${PICO_BOARD}"
+    DEVICE_NAME="es-cmd-usb"
+    FIRMWARE_VERSION="1.0.0"
+    DEVICE_PROJECT="211-command-usb"
+    DEVICE_REPO="es-student"
 )
 
 pico_enable_stdio_usb(${PROJECT_NAME} 1)

@@ -7,9 +7,9 @@
 #include "hardware/regs/sysinfo.h"
 
 struct info_t device_card = {
-    .serial = 123456,
-    .version = 1,
-    .name = "device"
+    .version = 0x00010000,
+    .name = "es-cmd-usb",
+    .revision = 2,
 };
 
 void device_info(void) {
@@ -32,25 +32,36 @@ void device_info(void) {
 }
 
 void dev_info(void) {
-    size_t size_serial = sizeof(device_card.serial);
-    size_t size_version = sizeof(device_card.version);
-    size_t size_name = sizeof(device_card.name);
+    printf("device_card     0x%08x %5u\n",
+           (unsigned)(uintptr_t)&device_card,
+           (unsigned)sizeof(device_card));
 
-    size_t off_serial = offsetof(struct info_t, serial);
-    size_t off_version = offsetof(struct info_t, version);
-    size_t off_name = offsetof(struct info_t, name);
+    printf("- %-10s 0x%08x %5u %6u 0x%08x\n",
+           "version",
+           (unsigned)(uintptr_t)&device_card.version,
+           (unsigned)sizeof(device_card.version),
+           (unsigned)offsetof(struct info_t, version),
+           (unsigned)device_card.version);
 
-    size_t total_fields = size_serial + size_version + size_name;
-    size_t total_struct = sizeof(device_card);
-    size_t padding = total_struct - total_fields;
+    printf("- %-10s 0x%08x %5u %6u %s\n",
+           "name",
+           (unsigned)(uintptr_t)device_card.name,
+           (unsigned)sizeof(device_card.name),
+           (unsigned)offsetof(struct info_t, name),
+           device_card.name);
 
-    printf("struct info_t: address 0x%08x, size %u\n", (unsigned)(uintptr_t)&device_card, (unsigned)total_struct);
-    printf("  serial:  address 0x%08x, size %u, offset %u, value %u\n",
-           (unsigned)(uintptr_t)&device_card.serial, (unsigned)size_serial, (unsigned)off_serial, (unsigned)device_card.serial);
-    printf("  version: address 0x%08x, size %u, offset %u, value %u\n",
-           (unsigned)(uintptr_t)&device_card.version, (unsigned)size_version, (unsigned)off_version, (unsigned)device_card.version);
-    printf("  name:    address 0x%08x, size %u, offset %u, value %s\n",
-           (unsigned)(uintptr_t)&device_card.name, (unsigned)size_name, (unsigned)off_name, device_card.name);
+    printf("- %-10s 0x%08x %5u %6u %u\n",
+           "revision",
+           (unsigned)(uintptr_t)&device_card.revision,
+           (unsigned)sizeof(device_card.revision),
+           (unsigned)offsetof(struct info_t, revision),
+           (unsigned)device_card.revision);
 
-    printf("fields %u, sizeof %u, padding %u\n", (unsigned)total_fields, (unsigned)total_struct, (unsigned)padding);
+    unsigned fields = sizeof(device_card.version)
+                    + sizeof(device_card.name)
+                    + sizeof(device_card.revision);
+    unsigned total = sizeof(device_card);
+    unsigned padding = total - fields;
+
+    printf("fields %u, sizeof %u, padding %u\n", fields, total, padding);
 }
