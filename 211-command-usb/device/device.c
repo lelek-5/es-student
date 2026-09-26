@@ -32,25 +32,26 @@ void device_info(void) {
 }
 
 void dev_info(void) {
+    printf("struct          address     size offset value\n");
     printf("device_card     0x%08x %5u\n",
            (unsigned)(uintptr_t)&device_card,
            (unsigned)sizeof(device_card));
 
-    printf("- %-10s 0x%08x %5u %6u 0x%08x\n",
+    printf("- %-13s 0x%08x %5u %6u 0x%08x\n",
            "version",
            (unsigned)(uintptr_t)&device_card.version,
            (unsigned)sizeof(device_card.version),
            (unsigned)offsetof(struct info_t, version),
            (unsigned)device_card.version);
 
-    printf("- %-10s 0x%08x %5u %6u %s\n",
+    printf("- %-13s 0x%08x %5u %6u %s\n",
            "name",
            (unsigned)(uintptr_t)device_card.name,
            (unsigned)sizeof(device_card.name),
            (unsigned)offsetof(struct info_t, name),
            device_card.name);
 
-    printf("- %-10s 0x%08x %5u %6u %u\n",
+    printf("- %-13s 0x%08x %5u %6u %u\n",
            "revision",
            (unsigned)(uintptr_t)&device_card.revision,
            (unsigned)sizeof(device_card.revision),
