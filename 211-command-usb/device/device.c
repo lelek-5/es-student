@@ -6,7 +6,7 @@
 #include "hardware/regs/addressmap.h"
 #include "hardware/regs/sysinfo.h"
 
-const struct info_t device_card = {
+struct info_t device_card = {
     .serial = 123456,
     .version = 1,
     .name = "device"

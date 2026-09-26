@@ -18,7 +18,7 @@ struct info_t {
     char name[16];
 };
 
-extern const struct info_t device_card;
+extern struct info_t device_card;
 
 void device_info(void);
 void dev_info(void);

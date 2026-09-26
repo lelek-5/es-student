@@ -3,9 +3,9 @@
 устройство: 2e8a:000a
 серийный номер: 500315192871A70C
 порт: COM5
-начало: 2026-09-26T12:17:55
-   0.000 --> dev_info
-   0.169 <-- dev_info
-   0.170 <-- dbg read_line:94 got dev_info
-   0.171 <-- err handle_command:73 unknown command: dev_info
+начало: 2026-09-26T12:27:30
+   0.001 --> dev_info
+   0.163 <-- dev_info
+   0.165 <-- dbg read_line:94 got dev_info
+   0.167 <-- err handle_command:73 unknown command: dev_info
 итог: отправлено команд 1, принято строк 3
