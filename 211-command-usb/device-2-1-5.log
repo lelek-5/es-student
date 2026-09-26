@@ -1,0 +1,11 @@
+задание: 2.1.5
+проект: 211-command-usb
+устройство: 2e8a:000a
+серийный номер: 500315192871A70C
+порт: COM5
+начало: 2026-09-26T12:04:41
+   0.000 --> dev_info
+   0.177 <-- dev_info
+   0.178 <-- dbg read_line:94 got dev_info
+   0.179 <-- err handle_command:73 unknown command: dev_info
+итог: отправлено команд 1, принято строк 3

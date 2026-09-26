@@ -132,3 +132,30 @@ void fw_info(void) {
         free(heap_variable);
     }
 }
+void boot_info(void) {
+    // 1. Указатели на ROM и Boot2
+    const uint8_t *rom = (const uint8_t *)ROM_BASE;
+    const uint8_t *boot2 = (const uint8_t *)XIP_BASE;
+
+    // 2. Сигнатура ROM (байты 'M', 'u', версия ROM)
+    printf("rom\n");
+    printf("  magic       %c%c\n", rom[0], rom[1]);
+    printf("  version     %u\n", rom[2]);
+
+    // 3. Таблица функций ROM (указатель находится по адресу 0x00000014)
+    uint16_t table_offset = *(const uint16_t *)(ROM_BASE + 0x14);
+    printf("  table       0x%08x\n", (unsigned)(ROM_BASE + table_offset));
+
+    // 4. Загрузчик второй стадии boot2 во флеш-памяти (256 байт)
+    printf("boot2\n");
+    printf("  start       0x%08x\n", (unsigned)XIP_BASE);
+    printf("  size        256\n");
+
+    // Первые 4 байта (первая инструкция перехода/настройки)
+    uint32_t first_word = *(const uint32_t *)boot2;
+    printf("  entry       0x%08x\n", (unsigned)first_word);
+
+    // Контрольная сумма CRC в последних 4 байтах boot2 (смещение 252)
+    uint32_t crc = *(const uint32_t *)(boot2 + 252);
+    printf("  crc         0x%08x\n", (unsigned)crc);
+}

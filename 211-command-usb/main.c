@@ -43,6 +43,10 @@ void cmd_fw_info(void) {
     fw_info();
 }
 
+void cmd_boot_info(void) {
+    boot_info();
+}
+
 const struct command_t commands[] = {
     { "enable", cmd_enable },
     { "disable", cmd_disable },
@@ -51,6 +55,7 @@ const struct command_t commands[] = {
     { "ping", cmd_ping },
     { "mem_info", cmd_mem_info },
     { "fw_info", cmd_fw_info },
+    { "boot_info", cmd_boot_info },  // <-- вот сюда
 };
 
 const uint command_count = sizeof(commands) / sizeof(commands[0]);
