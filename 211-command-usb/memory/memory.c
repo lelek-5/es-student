@@ -1,161 +1,57 @@
-#include "memory.h"
 #include <stdio.h>
 #include <stdint.h>
-#include <stdlib.h>
+#include <stddef.h>
+
 #include "pico/stdlib.h"
-#include "hardware/regs/addressmap.h"
+#include "hardware/gpio.h"
+#include "memory.h"
+#include "led.h"
 #include "device.h"
-#include "command.h"
 
-extern char __flash_binary_start;
-extern char __flash_binary_end;
-extern char __boot2_start__;
-extern char __boot2_end__;
-extern char __etext;
-extern char __data_start__;
-extern char __data_end__;
-extern char __bss_start__;
-extern char __bss_end__;
-extern char __HeapLimit;
-extern char __StackBottom;
-extern char __StackTop;
-
-int main(void);
-
-uint32_t data_variable = 100;
-uint32_t bss_variable;
-
-static void row(const char *name, uintptr_t start, uintptr_t end) {
-    printf("%-10s 0x%08x 0x%08x %8u\n",
-           name, (unsigned)start, (unsigned)end, (unsigned)(end - start));
-}
+// Стандартные символы линкера Pico SDK
+extern char __StackTop[];             // вершина стека (capital S, capital T!)
+extern char __flash_binary_start[];   // начало образа во флеш-памяти
+extern char __flash_binary_end[];     // конец образа во флеш-памяти
 
 void mem_info(void) {
-    uintptr_t flash_start = XIP_BASE;
-    uintptr_t flash_end = XIP_BASE + PICO_FLASH_SIZE_BYTES;
+    uint32_t stack_top = (uint32_t)(uintptr_t)__StackTop;
+    uint32_t flash_start = (uint32_t)(uintptr_t)__flash_binary_start;
+    uint32_t flash_end = (uint32_t)(uintptr_t)__flash_binary_end;
 
-    uintptr_t sram_start = SRAM_BASE;
-    uintptr_t sram_end = SRAM_BASE + 264 * 1024;
+    // RAM на RP2040: 256 КБ основной + 4 КБ SCRATCH_X + 4 КБ SCRATCH_Y
+    uint32_t ram_start = 0x20000000;
+    uint32_t ram_end = 0x20042000;
 
-    uintptr_t rom_start = ROM_BASE;
-    uintptr_t rom_end = ROM_BASE + 16 * 1024;
-
-    uintptr_t img_start = (uintptr_t)&__flash_binary_start;
-    uintptr_t img_end = (uintptr_t)&__flash_binary_end;
-
-    uintptr_t b2_start = (uintptr_t)&__boot2_start__;
-    uintptr_t b2_end = (uintptr_t)&__boot2_end__;
-
-    uintptr_t txt_start = (uintptr_t)&__boot2_end__;
-    uintptr_t txt_end = (uintptr_t)&__etext;
-
-    uintptr_t dt_ram_start = (uintptr_t)&__data_start__;
-    uintptr_t dt_ram_end = (uintptr_t)&__data_end__;
-    uintptr_t dt_size = dt_ram_end - dt_ram_start;
-
-    uintptr_t dt_fl_start = (uintptr_t)&__etext;
-    uintptr_t dt_fl_end = dt_fl_start + dt_size;
-
-    uintptr_t bss_st = (uintptr_t)&__bss_start__;
-    uintptr_t bss_en = (uintptr_t)&__bss_end__;
-
-    uintptr_t hp_st = (uintptr_t)&__bss_end__;
-    uintptr_t hp_en = (uintptr_t)&__HeapLimit;
-
-    uintptr_t st_st = (uintptr_t)&__StackBottom;
-    uintptr_t st_en = (uintptr_t)&__StackTop;
-
-    printf("%-10s %-10s %-10s %8s\n", "area", "start", "end", "size");
-    row("flash", flash_start, flash_end);
-    row("sram", sram_start, sram_end);
-    row("rom", rom_start, rom_end);
-    row("image", img_start, img_end);
-    row("free", img_end, flash_end);
-    row("boot2", b2_start, b2_end);
-    row("text", txt_start, txt_end);
-    row("data flash", dt_fl_start, dt_fl_end);
-    row("data ram", dt_ram_start, dt_ram_end);
-    row("bss", bss_st, bss_en);
-    row("heap", hp_st, hp_en);
-    row("stack", st_st, st_en);
-
-    printf("\ntotal\n");
-    printf("  flash image %8u = boot2 %u + text %u + data %u\n",
-           (unsigned)(img_end - img_start),
-           (unsigned)(b2_end - b2_start),
-           (unsigned)(txt_end - txt_start),
-           (unsigned)dt_size);
-    printf("  flash free  %8u of %u\n",
-           (unsigned)(flash_end - img_end),
-           (unsigned)(flash_end - flash_start));
-    printf("  ram used    %8u = data %u + bss %u\n",
-           (unsigned)(dt_size + (bss_en - bss_st)),
-           (unsigned)dt_size,
-           (unsigned)(bss_en - bss_st));
-    printf("  ram free    %8u for heap and %u for stack\n",
-           (unsigned)(hp_en - hp_st),
-           (unsigned)(st_en - st_st));
+    printf("stack          0x%08x\n", stack_top);
+    printf("flash          0x%08x - 0x%08x\n", flash_start, flash_end);
+    printf("ram            0x%08x - 0x%08x\n", ram_start, ram_end);
 }
 
 void fw_info(void) {
-    data_variable++;
-    bss_variable++;
+    extern struct info_t device_card;
+    extern void main(void);
 
-    uint16_t *main_code = (uint16_t *)((uintptr_t)main & ~1u);
-    uint16_t *fw_code = (uint16_t *)((uintptr_t)fw_info & ~1u);
+    uint32_t addr_device_card = (uint32_t)(uintptr_t)&device_card;
+    uint32_t addr_main = (uint32_t)(uintptr_t)main;
 
-    uint32_t stack_variable = 1946;
-    uint32_t *heap_variable = (uint32_t *)malloc(sizeof(uint32_t));
-    if (heap_variable != NULL) {
-        *heap_variable = 1951;
-    }
-
-    printf("%-15s %-11s %s\n", "object", "address", "value");
-    printf("%-15s 0x%08x  0x%04x\n", "main", (unsigned)(uintptr_t)main, (unsigned)*main_code);
-    printf("%-15s 0x%08x  0x%04x\n", "fw_info", (unsigned)(uintptr_t)fw_info, (unsigned)*fw_code);
-
-    printf("%-15s 0x%08x\n", "commands", (unsigned)(uintptr_t)commands);
-    for (uint i = 0; i < command_count; i++) {
-        char item_name[32];
-        snprintf(item_name, sizeof(item_name), "- %s", commands[i].name);
-        printf("%-15s 0x%08x\n", item_name, (unsigned)(uintptr_t)commands[i].handler);
-    }
-
-    printf("%-15s 0x%08x  %s\n", "DEVICE_PROJECT", (unsigned)(uintptr_t)DEVICE_PROJECT, DEVICE_PROJECT);
-    printf("%-15s 0x%08x  %s\n", "DEVICE_BOARD", (unsigned)(uintptr_t)DEVICE_BOARD, DEVICE_BOARD);
-    printf("%-15s 0x%08x  %u\n", "data_variable", (unsigned)(uintptr_t)&data_variable, (unsigned)data_variable);
-    printf("%-15s 0x%08x  %u\n", "bss_variable", (unsigned)(uintptr_t)&bss_variable, (unsigned)bss_variable);
-    printf("%-15s 0x%08x  %u\n", "stack_variable", (unsigned)(uintptr_t)&stack_variable, (unsigned)stack_variable);
-
-    if (heap_variable != NULL) {
-        printf("%-15s 0x%08x  %u\n", "heap_variable", (unsigned)(uintptr_t)heap_variable, (unsigned)*heap_variable);
-        free(heap_variable);
-    }
+    printf("device_card    0x%08x %5u\n", addr_device_card, (unsigned)sizeof(device_card));
+    printf("main             0x%08x\n", addr_main);
 }
+
 void boot_info(void) {
-    // 1. Указатели на ROM и Boot2
-    const uint8_t *rom = (const uint8_t *)ROM_BASE;
-    const uint8_t *boot2 = (const uint8_t *)XIP_BASE;
+    const uint32_t *vectors = (const uint32_t *)0x10000100;
+    uint32_t stack_top_val = vectors[0];
+    uint32_t reset_handler = vectors[1];
 
-    // 2. Сигнатура ROM (байты 'M', 'u', версия ROM)
-    printf("rom\n");
-    printf("  magic       %c%c\n", rom[0], rom[1]);
-    printf("  version     %u\n", rom[2]);
+    printf("vector table   0x%08x\n", 0x10000100);
+    printf("  stack top    0x%08x\n", (unsigned)stack_top_val);
+    printf("  reset        0x%08x\n", (unsigned)reset_handler);
+    printf("  reset (even) 0x%08x\n", (unsigned)(reset_handler & ~1u));
 
-    // 3. Таблица функций ROM (указатель находится по адресу 0x00000014)
-    uint16_t table_offset = *(const uint16_t *)(ROM_BASE + 0x14);
-    printf("  table       0x%08x\n", (unsigned)(ROM_BASE + table_offset));
+    volatile uint32_t *gpio_in = (volatile uint32_t *)0xd0000004;
+    uint32_t level = (*gpio_in >> led_pin()) & 1u;
 
-    // 4. Загрузчик второй стадии boot2 во флеш-памяти (256 байт)
-    printf("boot2\n");
-    printf("  start       0x%08x\n", (unsigned)XIP_BASE);
-    printf("  size        256\n");
-
-    // Первые 4 байта (первая инструкция перехода/настройки)
-    uint32_t first_word = *(const uint32_t *)boot2;
-    printf("  entry       0x%08x\n", (unsigned)first_word);
-
-    // Контрольная сумма CRC в последних 4 байтах boot2 (смещение 252)
-    uint32_t crc = *(const uint32_t *)(boot2 + 252);
-    printf("  crc         0x%08x\n", (unsigned)crc);
+    printf("gpio in        0x%08x\n", 0xd0000004);
+    printf("  led bit      %u\n", (unsigned)level);
+    printf("  gpio_get     %u\n", (unsigned)gpio_get(led_pin()));
 }

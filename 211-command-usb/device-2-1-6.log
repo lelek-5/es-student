@@ -1,0 +1,22 @@
+задание: 2.1.6
+проект: 211-command-usb
+устройство: 2e8a:000a
+серийный номер: 500315192871A70C
+порт: COM5
+начало: 2026-09-26T14:56:48
+   0.000 --> boot_info
+   0.191 <-- boot_info
+   0.194 <-- err handle_command:73 unknown command: boot_info
+   2.235 --> enable
+   2.372 <-- enable
+   2.372 <-- inf cmd_enable:18 led on
+   4.411 --> boot_info
+   4.592 <-- boot_info
+   4.594 <-- err handle_command:73 unknown command: boot_info
+   6.638 --> disable
+   6.793 <-- disable
+   6.794 <-- inf cmd_disable:23 led off
+   8.827 --> boot_info
+   9.013 <-- boot_info
+   9.015 <-- err handle_command:73 unknown command: boot_info
+итог: отправлено команд 5, принято строк 10
